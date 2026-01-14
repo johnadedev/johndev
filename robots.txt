@@ -1,0 +1,35 @@
+User-agent: *
+Allow: /
+
+# Allow crawling of all pages
+Allow: /index.html
+Allow: /about.html
+Allow: /portfolio.html
+Allow: /contact.html
+
+# Block access to resources directory for security
+Disallow: /resources/
+
+# Sitemap location
+Sitemap: https://john-dev-portfolio.com/sitemap.xml
+
+# Crawl delay for bots
+Crawl-delay: 1
+
+# Allow Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Allow Bingbot
+User-agent: Bingbot
+Allow: /
+
+# Block AI training bots (optional)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
